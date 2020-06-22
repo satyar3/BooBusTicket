@@ -5,19 +5,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriverManager {
-	
+public class DriverManager
+{
+
 	private static WebDriver driver;
 
 	//get the instance of driver
-	public static WebDriver getDriver() {
+	public static WebDriver getDriver()
+	{
 		return driver;
 	}
 
-	public static void setDriver() {
+	public static void setDriver()
+	{
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
-	
-	
+
 }

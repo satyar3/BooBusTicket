@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-public class TestBase {
-	
+public class TestBase
+{
+
 	protected WebDriver driver = null;
-	
+
 	@BeforeTest
 	public void setUp()
 	{
@@ -15,7 +16,7 @@ public class TestBase {
 		driver = DriverManager.getDriver();
 		driver.manage().window().maximize();
 	}
-	
+
 	@AfterTest
 	public void tearDown()
 	{
